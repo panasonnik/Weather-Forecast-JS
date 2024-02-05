@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a0c784d1ee.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card weather-today">
+            <div class="weather-today-info">
+                <div class="date">
+                    <h1 id="day"></h1>
+                    <h3 id="current-date"></h3>
+                    <h3 id="city"></h3>
+                </div>
+                <div class="weather">
+                    <div class="weather-today-icon"></div>
+                    <h1 id="temperature"></h1>
+                    <h3 id="weather-description"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="card forecast-card">
+            <div class="row-details">
+                <div class="col">
+                    <h2>Humidity</h2>
+                    <h2>Wind</h2>
+                </div>
+                <div class="col">
+                    <h2 id="humidity"></h2>
+                    <h2 id="wind"></h2>
+                </div>
+            </div>
+            <div class="row-forecast">
+                
+            </div>
+            <div class="city-input">
+            <form class="location">
+                <input type="text" placeholder="Enter the city..." id="city-search-input"/>
+                <input type="submit" value="Search" class="search-btn">
+            </form>
+            <button class="location-btn"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
